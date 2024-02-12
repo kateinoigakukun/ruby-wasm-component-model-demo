@@ -1,0 +1,7 @@
+package example:host;
+
+world runtime {
+  import print: func(msg: string);
+
+  export run: func();
+}

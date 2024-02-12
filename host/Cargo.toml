@@ -1,0 +1,8 @@
+[package]
+name = "host_sample"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasmtime = { version = "17.0.0", features = ["component-model"] }
+wasmtime-wasi = { version = "17.0.0" }

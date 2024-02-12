@@ -1,0 +1,10 @@
+link.filelist:
+	echo $(foreach obj,$(OBJS),$(abspath $(obj))) > $@
+
+hello.a: link.filelist
+
+hello.o: $(srcdir)/runtime.h
+
+runtime.o: $(srcdir)/runtime.c
+	@mkdir -p "$(@D)"
+	$(CC) -c -I$(srcdir) -o $@ $<

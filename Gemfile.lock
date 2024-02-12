@@ -1,0 +1,20 @@
+PATH
+  remote: gems/hello
+  specs:
+    hello (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ruby_wasm (2.5.0)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  hello!
+  ruby_wasm
+
+BUNDLED WITH
+   2.5.3
